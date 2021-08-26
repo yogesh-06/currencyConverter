@@ -6,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Currency Converter</h1>
-    <div class="container">
-      <div class="currency">
-        <select id="currency-one">
+    <h1 class="text-center">Currency Converter</h1>
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="d-flex mt-4">
+        <select
+          id="currency-one"
+          class="
+            btn btn-sm btn-secondary
+            dropdown-toggle dropdown-toggle-split
+            px-4
+          "
+        >
+          >
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
           <option value="AUD">AUD</option>
@@ -65,14 +79,28 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-one" placeholder="0" value="1" />
+        <input
+          type="number"
+          id="amount-one"
+          placeholder="0"
+          value="1"
+          class="input-group-text out"
+        />
       </div>
-      <div class="swap-rate-container">
-        <button class="btn" id="swap">Swap</button>
-        <div class="rate" id="rate"></div>
+      <div class="d-flex mt-4 font">
+        <button class="btn btn-primary btn-sm" id="swap">Swap</button>
+        <div class="m-5" id="rate"></div>
       </div>
-      <div class="currency">
-        <select id="currency-two">
+
+      <div class="d-flex mt-4">
+        <select
+          id="currency-two"
+          class="
+            btn btn-sm btn-secondary
+            dropdown-toggle dropdown-toggle-split
+            px-4
+          "
+        >
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
           <option value="AUD">AUD</option>
@@ -126,7 +154,12 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-two" placeholder="0" />
+        <input
+          type="number"
+          id="amount-two"
+          placeholder="0"
+          class="input-group-text"
+        />
       </div>
     </div>
   </body>
